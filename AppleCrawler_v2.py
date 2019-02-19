@@ -81,8 +81,6 @@ if __name__ == '__main__':
 
     crawler = AppleCrawler()
 
-    # content =  crawler.parser('https://tw.lifestyle.appledaily.com/gadget/realtime/20190208/1513973/')
-    # print(content.content)
     start_time = time.time()
     article_url = crawler.get_url(maxpage=1)
     print('"get_url" cost time:', time.time()-start_time)
